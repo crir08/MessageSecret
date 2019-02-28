@@ -27,4 +27,14 @@ elif fonction.lower() == 'd':
     key = input('Veuillez entrer la clé de décryptage: ')
     key = int(key)
 
-    message = input('Veuillez entrer le message à crypter')
+    message = input('Veuillez entrer le message à crypter: ')
+
+    for character in message:
+        if character in alphabet: 
+            position = alphabet.find(character)
+            newPosition = (position - key)
+            newCharacter = alphabet[newPosition]
+            newMessage += newCharacter
+        else:
+            newMessage += character
+    print('Votre message décrypté est: ' + newMessage)
