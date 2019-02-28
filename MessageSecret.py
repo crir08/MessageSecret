@@ -8,5 +8,8 @@ character = input('Veuillez entrer un clé: ')
 position = alphabet.find(character)
 print(position)
 
-newPosition = position + key
+newPosition = (position + key) % 26
 print(newPosition)
+
+newCharacter = alphabet[newPosition]
+print(newCharacter)
