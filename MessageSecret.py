@@ -2,9 +2,11 @@
 #Christophe Roux
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-key = 3
 
-character = input('Veuillez entrer un clé: ')
+key = input('Veuillez entrer une clé de cryptage: ')
+key = int(key)
+
+character = input('Veuillez entrer un caractère: ')
 
 position = alphabet.find(character)
 
