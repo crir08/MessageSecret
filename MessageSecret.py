@@ -2,15 +2,14 @@
 #Christophe Roux
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
+newMessage = ''
 
 key = input('Veuillez entrer une clé de cryptage: ')
 key = int(key)
 
-character = input('Veuillez entrer un caractère: ')
+message = input('Veuillez entrer un message: ')
 
 position = alphabet.find(character)
-
 newPosition = (position + key) % 26
-
 newCharacter = alphabet[newPosition]
 print('Le nouveau caractère est: ' + newCharacter)
