@@ -13,6 +13,6 @@ for character in message:
     position = alphabet.find(character)
     newPosition = (position + key) % 26
     newCharacter = alphabet[newPosition]
-    print('Le nouveau caractère est: ' + newCharacter)
+    #print('Le nouveau caractère est: ' + newCharacter)
     newMessage += newCharacter
-    print(newMessage)
+print('Votre message encrypté est: ' + newMessage)
