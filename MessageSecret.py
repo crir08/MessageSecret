@@ -7,3 +7,6 @@ key = 3
 character = input('Veuillez entrer un clé: ')
 position = alphabet.find(character)
 print(position)
+
+newPosition = position + key
+print(newPosition)
