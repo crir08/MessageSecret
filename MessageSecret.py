@@ -10,9 +10,9 @@ key = int(key)
 message = input('Veuillez entrer un message: ')
 
 for character in message:
-    position = alphabet.find(character)
-    newPosition = (position + key) % 26
-    newCharacter = alphabet[newPosition]
-    #print('Le nouveau caractère est: ' + newCharacter)
-    newMessage += newCharacter
+    if character in alphabet:
+        position = alphabet.find(character)
+        newPosition = (position + key) % 26
+        newCharacter = alphabet[newPosition]
+        newMessage += newCharacter
 print('Votre message encrypté est: ' + newMessage)
