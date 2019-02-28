@@ -14,3 +14,5 @@ for character in message:
     newPosition = (position + key) % 26
     newCharacter = alphabet[newPosition]
     print('Le nouveau caractère est: ' + newCharacter)
+    newMessage += newCharacter
+    print(newMessage)
