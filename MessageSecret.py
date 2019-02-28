@@ -2,3 +2,4 @@
 #Christophe Roux
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
+key = 3
