@@ -15,4 +15,6 @@ for character in message:
         newPosition = (position + key) % 26
         newCharacter = alphabet[newPosition]
         newMessage += newCharacter
+    else:
+         newMessage += character  
 print('Votre message encrypté est: ' + newMessage)
